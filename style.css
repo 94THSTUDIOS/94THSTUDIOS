@@ -1,0 +1,749 @@
+.header-content {
+    background-color: #F6F5E5 !important;
+    display: flex;
+}
+
+.header {
+    padding: 20px 30px;
+    position: relative;
+    z-index: 10; 
+}
+
+.header-left {
+    padding: 20px 60px;
+    margin:20px;    
+}
+
+.ripple-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f6f5e5;  
+    padding:20px 30px; 
+    margin: 0;
+    font-size: 5rem;
+    font-weight: bold;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.ripple-text span {
+    display: inline-block;
+    font-family: 'Bebas Neue', sans-serif;
+    animation: ripple 2s ease-in-out infinite; /* Continuous animation */
+    font-size: 5rem;
+}
+/* Ripple effect on hover */
+.ripple-text:hover span {
+    animation: ripple 0.15s ease-out;
+}
+
+/* Add delay for each letter to create wave effect */
+.ripple-text span:nth-child(1) { animation-delay: 0.00s; }
+.ripple-text span:nth-child(2) { animation-delay: 0.05s; }
+.ripple-text span:nth-child(3) { animation-delay: 0.10s; }
+.ripple-text span:nth-child(4) { animation-delay: 0.15s; }
+.ripple-text span:nth-child(5) { animation-delay: 0.20s; }
+.ripple-text span:nth-child(6) { animation-delay: 0.25s; }
+.ripple-text span:nth-child(7) { animation-delay: 0.30s; }
+.ripple-text span:nth-child(8) { animation-delay: 0.35s; }
+.ripple-text span:nth-child(9) { animation-delay: 0.40s; }
+.ripple-text span:nth-child(10) { animation-delay: 0.45s; }
+.ripple-text span:nth-child(11) { animation-delay: 0.50s; }
+.ripple-text span:nth-child(12) { animation-delay: 0.55s; }
+.ripple-text span:nth-child(13) { animation-delay: 0.60s; }
+
+@keyframes ripple {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px) scale(1.1);
+        color: #666;
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes ripple {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+        color: #666;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+body {
+    background-color: #F6F5E5 !important;    
+}
+
+.hero-image {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.position-absolute.top-0.end-0.p-3 {
+    padding: 3.5rem !important;  /* Adjust this value as needed */
+    display: left;
+    align-items: top-center;
+    height: 125%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10rem;
+    color: #4A5E54;
+    background-color: #F6F5E5;
+    text-align: left;
+    padding: 25px 3px;
+}
+
+.nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: black; 
+    padding: 10px 60px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #666;
+    transform: scale(1.1);
+}
+
+/* Two Column Layout */
+.two-column-container {
+    display: flex;
+    min-height: calc(100vh - 100px); /* Adjust based on your header height */
+    background-color: #f6f5e5;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* side menu */
+.menu-column {
+    flex: 0 0 250px;
+    background-color: #f6f5e5;
+    padding: 1rem;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin-bottom: 2.5rem;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.header-right {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+
+/* contact button */
+.contact-btn {
+    background-color: transparent;
+    border: none;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.contact-btn i {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact-btn:hover {
+    transform: scale(2.0);
+}
+
+/* If you want a subtle hover effect */
+.contact-btn:hover i {
+    color: #333;
+    background-color: white;
+}
+
+/* Page Container */
+.page-container {
+    min-height: 100vh;
+    background-color: #f6f5e5;
+}
+
+/* Two Column Layout */
+.two-column-layout {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    padding: 40px 60px;
+    gap: 40px;
+}
+
+/* Side Menu Column */
+.side-menu-column {
+    flex: 0 0 250px;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu li {
+    margin-bottom: 15px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect 1: Scale and Slide */
+.side-menu li:hover {
+    transform: translateX(30px) scale(2.0);
+}
+
+/* Header subtitle */
+.header-subtitle {
+    font-family: 'Oswald', sans-serif;
+    color: #666;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* Main content description */
+.content-description {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Menu descriptions */
+.menu-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    padding-left: 15px;
+}
+
+footer {
+    background-color: #f6f5e5;
+    padding: 40px;  /* Consistent padding all around */
+    margin-top: auto; /* Pushes footer to bottom if needed */
+}
+
+/* If you have content inside the footer */
+.footer-content {
+    max-width: 1200px; /* Match your page width */
+    margin: 0 auto;
+    padding: 0 40px; /* Match left/right padding with other sections */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* If you have specific footer elements */
+.footer-links {
+    padding: 0 40px; /* Consistent with other sections */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+    }
+    
+    .footer-content {
+        padding: 0 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* Global container padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header padding */
+header {
+    padding: 40px 60px; /* top/bottom left/right */
+    background-color: #f6f5e5;
+}
+
+.header-left {
+    padding-bottom: 20px;
+}
+
+/* Two column layout padding */
+.two-column-layout {
+    padding: 40px 60px;
+    gap: 40px; /* Space between columns */
+}
+
+/* Side menu padding */
+.side-menu-column {
+    padding: 20px;
+}
+
+.side-menu li {
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.side-menu a {
+    padding: 8px 16px;
+}
+
+/* Main content padding */
+.main-content-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Hero/Carousel padding */
+.carousel-container {
+    transform: none;
+    margin: 0 auto;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    width: 400px !important;
+    height: 300px !important;
+    border-radius: 10px; /* Optional: add slight rounding to match UI/UX page */
+}
+
+.carousel-item img {
+    width: 400px !important;
+    height: 300px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-item video {
+    width: 400px !important;
+    height: 300px !important;
+    object-fit: contain;
+    background: #000;
+}
+
+/* Prevent carousel auto-sliding when video is playing */
+.carousel.slide .carousel-item.active {
+    display: block;
+}
+
+/* Footer padding */
+footer {
+    padding: 40px 60px;
+}
+
+.footer-content {
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header,
+    .two-column-layout,
+    footer {
+        padding: 20px 30px;
+    }
+
+    .side-menu-column,
+    .main-content-column {
+        padding: 15px;
+    }
+
+    .carousel-container {
+        width: 280px !important;
+        height: 200px !important;
+        padding: 10px;
+    }
+    
+    .carousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item img {
+        width: 280px !important;
+        height: 200px !important;
+    }
+
+    .carousel-item video {
+        width: 280px !important;
+        height: 200px !important;
+    }
+}
+
+
+.floating-icon {
+    position: fixed;
+    top: 7.5px;
+    right: 40px;
+    z-index: 9999;
+    background-color: #f6f5e5;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+
+.floating-icon i {
+    font-size: 1.5rem;
+    color: #333;
+    position: absolute;
+}
+
+/* Hover animation */
+.floating-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Make sure no other elements are interfering */
+body {
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-auto.position-fixed {
+        padding: 1rem !important;
+    }
+    
+    .floating-icon {
+        top: 100px;
+        right: 50px;
+        padding: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Floating header styles */
+.floating-header {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 999;
+    background-color: #f6f5e5;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Keep your existing ripple text styles and add these */
+.ripple-text {
+    margin: 0;
+    padding: 0;
+    font-size: 5.5rem; /* Adjust size as needed */
+}
+
+/* Optional: Add hover effect */
+.floating-header:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .floating-header {
+        top: 10px;
+        left: 20px;
+        padding: 8px 15px;
+    }
+}
+
+/* Larger h1 text styles */
+.ripple-text {
+    font-size: 3.5rem; /* Increased from previous size */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+/* If your h1 is in the floating header */
+.floating-header h1 {
+    font-size: 3.5rem;
+}
+
+/* Make it responsive */
+@media (max-width: 1200px) {
+    .ripple-text,
+    .floating-header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ripple-text,
+    .floating-header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ripple-text,
+    .floating-header h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Make it responsive */
+@media (max-width: 1200px) {
+    .ripple-text,
+    .ripple-text span {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ripple-text,
+    .ripple-text span {
+        font-size: 3rem;
+    }
+}
+
+/* Container for image and hover text */
+.image-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    transform: translateY(-10px); /* Only moving vertically now */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 80px; /* Optional: if you want rounded corners */
+}
+
+/* Hover overlay */
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-overlay h2 {
+    color: rgb(244, 244, 244);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.hover-overlay p {
+    color: white;
+    font-size: 1.2rem;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effects */
+.image-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+.image-container:hover .hero-image {
+    transform: scale(1.1);
+}
+
+.image-container:hover .hover-overlay h2,
+.image-container:hover .hover-overlay p {
+    transform: translateY(0);
+}
+
+.main-content-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .main-content-column {
+        padding: 0 150px 50px 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-content-column {
+        padding: 0 100px 40px 80px;
+    }
+    
+    .image-container {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Update main content column */
+.main-content-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Center carousel-dark */
+.carousel-dark {
+    width: 400px !important;
+    height: 300px !important;
+    position: relative;
+    margin: 0 auto;
+    transform: none; /* Remove any transforms that might affect centering */
+}
+
+.carousel-dark .carousel-inner,
+.carousel-dark .carousel-item {
+    width: 400px !important;
+    height: 300px !important;
+    border-radius: 10px;
+}
+
+.carousel-dark .carousel-item img {
+    width: 400px !important;
+    height: 300px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Remove any conflicting transforms or positioning */
+.carousel-container {
+    transform: none;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 1000px;
+    padding: 0 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ /* nav bar font */
+ .container-fluid {
+
+    max-width: 1280px; /* Set a maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 2px; /* Add padding */
+    width: 100%; /* Ensure it takes full width */
+    font-family: 'Oswald', sans-serif;
+ }
+
+ .container-text {
+    padding: 15px;
+    margin: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #333;    
+ }
+
+.container-text {
+    padding: 30px;
+    margin: 50px auto;
+    max-width: 800px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #f6f5e5;
+}
+
+.container-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
